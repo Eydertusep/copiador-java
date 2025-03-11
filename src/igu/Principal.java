@@ -7,6 +7,7 @@ public class Principal extends javax.swing.JFrame {
   
     public Principal() {
         initComponents();
+        txtcopiado.setEditable(false); /* Le deicmos que no se puede editar, pero es mas sencillo desde Desing */
     }
 
     
@@ -36,6 +37,8 @@ public class Principal extends javax.swing.JFrame {
             }
         });
 
+        txtcopiado.setEditable(false);
+
         btnCopiar.setText("copiar");
         btnCopiar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -56,7 +59,7 @@ public class Principal extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(txtMensaje, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtcopiado, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -86,9 +89,9 @@ public class Principal extends javax.swing.JFrame {
                 .addComponent(txtMensaje, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(btnCopiar)
-                .addGap(40, 40, 40)
+                .addGap(42, 42, 42)
                 .addComponent(txtcopiado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(29, 29, 29)
+                .addGap(27, 27, 27)
                 .addComponent(btnLimpiar)
                 .addContainerGap(39, Short.MAX_VALUE))
         );
